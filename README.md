@@ -25,9 +25,11 @@ pip install git+https://github.com/Romamo/itrx.git
 from itrx import Client
 
 client = Client()
-# Get last USDT transactions
+
 price = client.get_price(64000)
+
 response = client.create_order('receiving address')
+
 print(response)
 ```
 
